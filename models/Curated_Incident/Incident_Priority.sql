@@ -1,3 +1,5 @@
+{{ config(schema='curated') }}
+
 with priority as (
     select
         distinct priority as priority_num

@@ -33,7 +33,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   Incidents:
-   Reports_Data:
+   Curated:
+      +schema: Curated
+   Consumption:
+      +schema: Consumption
+   Consumption_Incident:
         +materialized: table
-   Reports_Staging:
-        +materialized: view
+

@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: public
+  - name: raw
     description: Table containing Incidents
     database: incident
     tables:

@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+  - name: curated
+    description: A curated version of the ingested raw data.
+    database: incident
+    tables:
+      - name: incident_priority
+        columns:
+          - name: row_num
+            description: Primary key of the table
+            tests:
+              - unique
+
+      - name: incident_status
+        columns:
+          - name: row_num
+            description: Primary key of the table
+            tests:
+              - unique
+
+
+models:
+  - name: Incident_Priority
+    description: List of Incident Priority
+    columns: 
+      - name: priority_num
+        description: Describes type of priority
+        tests:
+          - unique
+          - not_null
+
+  - name: Incident_Status
+    description: List of Incident Status
+    columns: 
+      - name: incident_status
+        description: '{{ doc("incident_report") }}'
+        tests: 
+          - accepted_values:
+              values: ['Assigned','Closed','Resolved','Work in Progress']
