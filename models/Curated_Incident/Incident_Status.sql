@@ -1,3 +1,5 @@
+{{ config(schema='curated') }}
+
 with status as (
     select
         distinct incident_status

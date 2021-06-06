@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: consumption
+    description: This table contains the final details after join
+    database: incident
+    tables:
+      - name: landing_fact
