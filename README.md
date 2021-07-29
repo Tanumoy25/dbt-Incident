@@ -1,15 +1,11 @@
-Welcome to your new dbt project!
+Welcome to this new dbt project using Snowflake!
 
-### Using the starter project
+### Incident Managemnet using DBT and Snowflake
 
-Try running the following commands:
-- dbt run
-- dbt test
+this project mainly consists of managing incidents :
+- storing data in Snowflake table
+- reading the data from DBT and then applying transformations
+- capturing changes made to incident by merging the change to a previous incident using Type-II logic.
+- storing the changes made into a landing table in Snowflake
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
